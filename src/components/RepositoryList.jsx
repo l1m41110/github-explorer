@@ -1,26 +1,18 @@
+import { RepositoryItem } from './RepositoryItem';
+
 const repositoryName = 'unform2';
 
 export function RepositoryList() {
-  return(
-    <section className="repository-list">
+  return (
+    <section className='repository-list'>
       <h1>Reposiroty List</h1>
       <ul>
-        <li>
-          <strong>{repositoryName}</strong>
-          <p>Forms in React</p>
-          <a href="">Go to Repo</a>
-        </li>
-        <li>
-          <strong>unform</strong>
-          <p>Forms in React</p>
-          <a href="">Go to Repo</a>
-        </li>
-        <li>
-          <strong>unform</strong>
-          <p>Forms in React</p>
-          <a href="">Go to Repo</a>
-        </li>
+        <RepositoryItem repository='unform2' />
+        <RepositoryItem />
+        <RepositoryItem />
+        <RepositoryItem />
+        <RepositoryItem />
       </ul>
     </section>
-  )
+  );
 }
