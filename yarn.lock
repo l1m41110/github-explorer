@@ -515,6 +515,13 @@
   dependencies:
     "@babel/helper-plugin-utils" "^7.12.13"
 
+"@babel/plugin-syntax-typescript@^7.12.13":
+  version "7.12.13"
+  resolved "https://packages.atlassian.com/api/npm/npm-remote/@babel/plugin-syntax-typescript/-/plugin-syntax-typescript-7.12.13.tgz#9dff111ca64154cef0f4dc52cf843d9f12ce4474"
+  integrity sha1-nf8RHKZBVM7w9NxSz4Q9nxLORHQ=
+  dependencies:
+    "@babel/helper-plugin-utils" "^7.12.13"
+
 "@babel/plugin-transform-arrow-functions@^7.13.0":
   version "7.13.0"
   resolved "https://packages.atlassian.com/api/npm/npm-remote/@babel/plugin-transform-arrow-functions/-/plugin-transform-arrow-functions-7.13.0.tgz#10a59bebad52d637a027afa692e8d5ceff5e3dae"
@@ -781,6 +788,15 @@
   dependencies:
     "@babel/helper-plugin-utils" "^7.12.13"
 
+"@babel/plugin-transform-typescript@^7.13.0":
+  version "7.14.3"
+  resolved "https://packages.atlassian.com/api/npm/npm-remote/@babel/plugin-transform-typescript/-/plugin-transform-typescript-7.14.3.tgz#44f67f725a60cccee33d9d6fee5e4f338258f34f"
+  integrity sha1-RPZ/clpgzM7jPZ1v7l5PM4JY808=
+  dependencies:
+    "@babel/helper-create-class-features-plugin" "^7.14.3"
+    "@babel/helper-plugin-utils" "^7.13.0"
+    "@babel/plugin-syntax-typescript" "^7.12.13"
+
 "@babel/plugin-transform-unicode-escapes@^7.12.13":
   version "7.12.13"
   resolved "https://packages.atlassian.com/api/npm/npm-remote/@babel/plugin-transform-unicode-escapes/-/plugin-transform-unicode-escapes-7.12.13.tgz#840ced3b816d3b5127dd1d12dcedc5dead1a5e74"
@@ -897,6 +913,15 @@
     "@babel/plugin-transform-react-jsx" "^7.13.12"
     "@babel/plugin-transform-react-jsx-development" "^7.12.17"
     "@babel/plugin-transform-react-pure-annotations" "^7.12.1"
+
+"@babel/preset-typescript@^7.13.0":
+  version "7.13.0"
+  resolved "https://packages.atlassian.com/api/npm/npm-remote/@babel/preset-typescript/-/preset-typescript-7.13.0.tgz#ab107e5f050609d806fbb039bec553b33462c60a"
+  integrity sha1-qxB+XwUGCdgG+7A5vsVTszRixgo=
+  dependencies:
+    "@babel/helper-plugin-utils" "^7.13.0"
+    "@babel/helper-validator-option" "^7.12.17"
+    "@babel/plugin-transform-typescript" "^7.13.0"
 
 "@babel/runtime@^7.8.4":
   version "7.14.0"
@@ -1018,6 +1043,32 @@
   version "15.3.0"
   resolved "https://packages.atlassian.com/api/npm/npm-remote/@types/node/-/node-15.3.0.tgz#d6fed7d6bc6854306da3dea1af9f874b00783e26"
   integrity sha1-1v7X1rxoVDBto96hr5+HSwB4PiY=
+
+"@types/prop-types@*":
+  version "15.7.3"
+  resolved "https://packages.atlassian.com/api/npm/npm-remote/@types/prop-types/-/prop-types-15.7.3.tgz#2ab0d5da2e5815f94b0b9d4b95d1e5f243ab2ca7"
+  integrity sha1-KrDV2i5YFflLC51LldHl8kOrLKc=
+
+"@types/react-dom@^17.0.5":
+  version "17.0.5"
+  resolved "https://packages.atlassian.com/api/npm/npm-remote/@types/react-dom/-/react-dom-17.0.5.tgz#df44eed5b8d9e0b13bb0cd38e0ea6572a1231227"
+  integrity sha1-30Tu1bjZ4LE7sM044OplcqEjEic=
+  dependencies:
+    "@types/react" "*"
+
+"@types/react@*", "@types/react@^17.0.6":
+  version "17.0.6"
+  resolved "https://packages.atlassian.com/api/npm/npm-remote/@types/react/-/react-17.0.6.tgz#0ec564566302c562bf497d73219797a5e0297013"
+  integrity sha1-DsVkVmMCxWK/SX1zIZeXpeApcBM=
+  dependencies:
+    "@types/prop-types" "*"
+    "@types/scheduler" "*"
+    csstype "^3.0.2"
+
+"@types/scheduler@*":
+  version "0.16.1"
+  resolved "https://packages.atlassian.com/api/npm/npm-remote/@types/scheduler/-/scheduler-0.16.1.tgz#18845205e86ff0038517aab7a18a62a6b9f71275"
+  integrity sha1-GIRSBehv8AOFF6q3oYpiprn3EnU=
 
 "@webassemblyjs/ast@1.11.0":
   version "1.11.0"
@@ -1940,6 +1991,11 @@ cssesc@^3.0.0:
   version "3.0.0"
   resolved "https://packages.atlassian.com/api/npm/npm-remote/cssesc/-/cssesc-3.0.0.tgz#37741919903b868565e1c09ea747445cd18983ee"
   integrity sha1-N3QZGZA7hoVl4cCep0dEXNGJg+4=
+
+csstype@^3.0.2:
+  version "3.0.8"
+  resolved "https://packages.atlassian.com/api/npm/npm-remote/csstype/-/csstype-3.0.8.tgz#d2266a792729fb227cd216fb572f43728e1ad340"
+  integrity sha1-0iZqeScp+yJ80hb7Vy9Dco4a00A=
 
 currently-unhandled@^0.4.1:
   version "0.4.1"
@@ -5285,6 +5341,11 @@ type-is@~1.6.17, type-is@~1.6.18:
   dependencies:
     media-typer "0.3.0"
     mime-types "~2.1.24"
+
+typescript@^4.2.4:
+  version "4.2.4"
+  resolved "https://packages.atlassian.com/api/npm/npm-remote/typescript/-/typescript-4.2.4.tgz#8610b59747de028fda898a8aef0e103f156d0961"
+  integrity sha1-hhC1l0feAo/aiYqK7w4QPxVtCWE=
 
 unicode-canonical-property-names-ecmascript@^1.0.4:
   version "1.0.4"
