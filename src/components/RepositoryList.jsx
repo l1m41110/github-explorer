@@ -1,6 +1,8 @@
+import { useEffect, useState } from 'react';
+import '../styles/repository.scss';
 import { RepositoryItem } from './RepositoryItem';
 
-import '../styles/repository.scss';
+const repo = 'https://api.github.com/orgs/atlassian/repos';
 
 const repository = {
   name: 'unform',
@@ -9,9 +11,19 @@ const repository = {
 };
 
 export function RepositoryList() {
+  const [repositories, setRepositories] = useState([]);
+
+  // don't call useEffect without the second parameter to avoid loop
+  useEffect(() => {
+    fetch(repo).then((res) => res.json().then((data) => setRepositories(data)));
+  }, []);
+
+  // we can verify first call empty when useState is set and second call when the github api is fetched
+  console.log(repositories);
+
   return (
     <section className='repository-list'>
-      <h1>Reposiroty List</h1>
+      <h1>Repository List</h1>
       <ul>
         <RepositoryItem repository={repository} />
         <RepositoryItem repository={repository} />
